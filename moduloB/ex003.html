@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 04</title>
+    <title>Aula 05</title>
     <style>
         body{
             background-color: rgb(73, 73, 195);
@@ -25,9 +25,10 @@
 
 
     <script>
-        var nome = window.prompt('Qual seu nome?');
-        window.alert('Prazer te conhecer ' + nome)
-        document.getElementById('escr').innerHTML = nome;
+        var n1 = Number.parseFloat(window.prompt('Digite um número: ')) //colocar apenas Number, String/ .toString
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert(s)
     </script>
 </body>
 </html>
