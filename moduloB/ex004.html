@@ -8,10 +8,23 @@
 </head>
 <body>
    <script>
-    var teste = "TestandoTamanho DaString"
-        console.log('Quantidade de letras: ' + teste.length)
-        console.log('Deixando com letras MAIUSCULAS: ' + teste.toUpperCase())
-        console.log('Deixando com letras minusculas: ' + teste.toLowerCase())
+    var teste = window.prompt('Digite seu nome');
+       
+
+
+    document.writeln(`<p>Quantidade de letras: ${teste.length}</p>`);
+    document.write(`<p>Deixando com letras MAIUSCULAS: ${teste.toUpperCase()}</p>`);
+    document.write(`<p>Deixando com letras minusculas: ${teste.toLowerCase()}</p>`);
+
+
+    var n1 = 1543.9;
+    document.write(n1.toFixed(3) + "<br>")
+
+    document.write(n1.toFixed(2).replace('.', ',') +  "<br>")
+
+    document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) +  "<br>")
+    document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) +  "<br>")
+    document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) +  "<br>")
    </script> 
 </body>
 </html>
